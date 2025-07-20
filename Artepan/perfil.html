@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Perfil</title>
+    <style>
+        body {
+            margin: 0;
+            background: #fff;
+            font-family: Inter, sans-serif;
+        }
+        input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            font-family: Inter, sans-serif;
+            background: transparent;
+            color: #343C6A;
+        }
+        button {
+            width: 195px;
+            height: 64px;
+            background: #1814F3;
+            border-radius: 9px;
+            color: white;
+            font-size: 15px;
+            font-family: Inter, sans-serif;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0f0ecb;
+        }
+        .campo-container {
+            background: white;
+            border-radius: 15px;
+            border: 1px #DFEAF2 solid;
+            padding: 10px;
+        }
+        .label {
+            color: #232323;
+            font-size: 13px;
+            font-family: Inter, sans-serif;
+        }
+        .sidebar-link {
+            position: absolute;
+            color: #B1B1B1;
+            font-size: 20px;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            word-wrap: break-word;
+            text-decoration: none;
+        }
+        .sidebar-link:hover {
+            color: #1814F3;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 1440px; height: 1024px; position: relative; background: white; overflow: hidden">
+        <div style="width: 1440px; height: 1024px; position: relative; background: white; overflow: hidden">
+            <div style="width: 1440px; height: 1024px; position: relative; background: white; overflow: hidden">
+                <div style="width: 33.65px; height: 31.73px; left: 34px; top: 831.83px; position: absolute"></div>
+                <div style="width: 34.99px; height: 33px; left: 36.69px; top: 506.92px; position: absolute"></div>
+                <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 263.23px; position: absolute; overflow: hidden">
+                  <div style="width: 19.63px; height: 3.80px; left: 7.01px; top: 27.93px; position: absolute; background: #B1B1B1"></div>
+                  <div style="width: 19.63px; height: 3.97px; left: 7.01px; top: 0px; position: absolute; background: #B1B1B1"></div>
+                  <div style="width: 7.01px; height: 9.80px; left: 26.64px; top: 4.37px; position: absolute; background: #B1B1B1"></div>
+                  <div style="width: 19.63px; height: 21.15px; left: 7.01px; top: 5.29px; position: absolute; background: #B1B1B1"></div>
+                  <div style="width: 7.01px; height: 9.80px; left: 0px; top: 17.55px; position: absolute; background: #B1B1B1"></div>
+                </div>
+                <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 345.73px; position: absolute; overflow: hidden">
+                    <img style="width: 28.07px; height: 30.40px; left: 2.76px; top: 0; position: absolute; border-radius: 20px" src="img/mi-perfil.png" />
+                </div>
+                <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 182px; position: absolute; overflow: hidden">
+                    <img style="width: 33.64px; height: 31.73px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="img/inicio.png" />
+                </div>        
+                <div style="width: 37px; height: 34px; left: 35px; top: 436px; position: absolute; overflow: hidden">
+                    <img style="width: 37px; height: 34px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="img/cerrar-sesion.png" />
+                </div>
+                <div style="width: 1190px; height: 1px; left: 250px; top: 100px; position: absolute; background: #E6EFF5"></div>
+                <div style="width: 1190px; height: 923px; left: 250px; top: 101px; position: absolute; background: #F5F7FA"></div>
+                <img id="avatar-mini" 
+                    src="" 
+                    alt="Avatar" 
+                    style="width: 60px; height: 60px; 
+                            left: 1340px; 
+                            top: 21px; 
+                            position: absolute; 
+                            border-radius: 50%; 
+                            object-fit: cover;">
+                <!-- Nombre del usuario en la esquina superior -->
+                <div id="nombre-usuario" style="left: 1000px; top: 34px; position: absolute; color: #343C6A; font-size: 28px; font-family: Inter; font-weight: 600; word-wrap: break-word">
+                    <!-- Aquí aparecerá el nombre del usuario -->
+                    Usuario1
+                  </div>
+                <div style="width: 1px; height: 850px; left: 249px; top: 0px; position: absolute; background: #E6EFF5"></div>
+                <img style="width: 172px; height: 138px; left: 42px; top: 7px; position: absolute" src="img/artepan-principal.png" />
+                <div style="width: 33.65px; height: 31.73px; left: 34px; top: 831.83px; position: absolute"></div>
+                <div style="width: 34.99px; height: 33px; left: 36.69px; top: 506.92px; position: absolute"></div>
+                <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 263.23px; position: absolute; overflow: hidden">
+                  <div style="width: 19.63px; height: 3.80px; left: 7.01px; top: 27.93px; position: absolute; background: #B1B1B1"></div>
+                  <div style="width: 19.63px; height: 3.97px; left: 7.01px; top: 0px; position: absolute; background: #B1B1B1"></div>
+                  <div style="width: 7.01px; height: 9.80px; left: 26.64px; top: 4.37px; position: absolute; background: #B1B1B1"></div>
+                  <div style="width: 19.63px; height: 21.15px; left: 7.01px; top: 5.29px; position: absolute; background: #B1B1B1"></div>
+                  <div style="width: 7.01px; height: 9.80px; left: 0px; top: 17.55px; position: absolute; background: #B1B1B1"></div>         
+                <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 345.73px; position: absolute; overflow: hidden">
+                    <img style="width: 28.07px; height: 30.40px; left: 2.76px; top: 0; position: absolute; border-radius: 20px" src="img/mi-perfil.png" />
+                </div>
+                <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 182px; position: absolute; overflow: hidden">
+                    <img style="width: 33.64px; height: 31.73px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="img/inicio.png" />
+                </div>
+                <a href="principal.html" style="width: 61.91px; height: 55.84px; left: 106.68px; top: 184.54px; position: absolute; color: #B1B1B1; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word; text-decoration: none;">
+                    Inicio<br/>
+                  </a>          
+                <div style="width: 1190px; height: 1px; left: 250px; top: 100px; position: absolute; background: #E6EFF5"></div>
+                <div style="width: 1px; height: 850px; left: 249px; top: 0px; position: absolute; background: #E6EFF5"></div>
+                <img style="width: 172px; height: 138px; left: 42px; top: 7px; position: absolute" src="img/artepan-principal.png" />
+                <div style="width: 1110px; height: 813px; left: 289px; top: 136px; position: absolute">
+                  <div style="width: 1110px; height: 813px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 20px"></div>
+                  <div style="width: 164.33px; height: 161.43px; left: 37.35px; top: 142.35px; position: absolute; background: #C4C4C4; border-radius: 9999px"></div>
+                  <div style="width: 432.32px; height: 283.12px; left: -159.85px; top: 138.62px; position: absolute"></div>
+                  <img style="width: 169px; height: 160px; left: 37px; top: 142px; position: absolute" src="https://placehold.co/169x160" />
+                  <div style="width: 37.35px; height: 36.69px; left: 168.82px; top: 248.01px; position: absolute; background: #1814F3; border-radius: 9999px"></div>
+                  <div style="width: 17.93px; height: 17.61px; left: 179.27px; top: 258.28px; position: absolute; overflow: hidden">
+                    <div style="width: 17.93px; height: 17.61px; left: 0px; top: 0px; position: absolute; background: white"></div>
+                  </div>
+                  <div style="width: 94.12px; height: 22.01px; left: 61.25px; top: 36.69px; position: absolute; color: #1814F3; font-size: 12px; font-family: Inter; font-weight: 500; word-wrap: break-word">Editar perfil</div>
+                  <div style="width: 104.58px; height: 22.01px; left: 245.01px; top: 36.69px; position: absolute; color: #718EBF; font-size: 12px; font-family: Inter; font-weight: 500; word-wrap: break-word">Preferencias</div>
+                  <div style="width: 71.71px; height: 22.01px; left: 439.22px; top: 36.69px; position: absolute; color: #718EBF; font-size: 12px; font-family: Inter; font-weight: 500; word-wrap: break-word">Seguridad</div>
+                  <div style="width: 1035.30px; height: 1.47px; left: 37.35px; top: 74.84px; position: absolute; background: #F4F5F7"></div>
+                  <div style="width: 140.43px; height: 4.40px; left: 37.35px; top: 71.91px; position: absolute; background: #1814F3; border-top-left-radius: 10px; border-top-right-radius: 10px"></div>
+                  <div style="width: 101.59px; height: 23.48px; left: 268.91px; top: 136.48px; position: absolute; color: #232323; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Nombre</div>
+                  <div style="width: 382.45px; height: 58.70px; left: 268.91px; top: 170.23px; position: absolute; background: white; border-radius: 15px; border: 1px #DFEAF2 solid"></div>
+                  <div style="width: 125.49px; height: 22.01px; left: 291.32px; top: 189.31px; position: absolute; color: #718EBF; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Usuario1</div>
+                  <div style="width: 133px; height: 24px; left: 269px; top: 249px; position: absolute; color: #232323; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Correo electrónico</div>
+                  <div style="width: 382.45px; height: 58.70px; left: 268.91px; top: 283.23px; position: absolute; background: white; border-radius: 15px; border: 1px #DFEAF2 solid"></div>
+                  <div style="width: 215.13px; height: 22.01px; left: 291.32px; top: 302.31px; position: absolute; color: #718EBF; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Usuario1@gmail.com</div>
+                  <div style="width: 182.26px; height: 23.48px; left: 690px; top: 363px; position: absolute; color: #232323; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Dirección</div>
+                  <div style="width: 382.45px; height: 58.70px; left: 690px; top: 396.75px; position: absolute; background: white; border-radius: 15px; border: 1px #DFEAF2 solid"></div>
+                  <div style="width: 215.13px; height: 22.01px; left: 712.41px; top: 415.83px; position: absolute; color: #718EBF; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Calle 0 Sur #1B-05</div>
+                  <div style="width: 187px; height: 24px; left: 690px; top: 136px; position: absolute; color: #232323; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Número de identificación</div>
+                  <div style="width: 382.45px; height: 58.70px; left: 690.20px; top: 170.23px; position: absolute; background: white; border-radius: 15px; border: 1px #DFEAF2 solid"></div>
+                  <div style="width: 125.49px; height: 22.01px; left: 712.61px; top: 189.31px; position: absolute; color: #718EBF; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">123456789</div>
+                  <div style="width: 89.64px; height: 23.48px; left: 690.20px; top: 249.48px; position: absolute; color: #232323; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Contraseña</div>
+                  <div style="width: 382.45px; height: 58.70px; left: 690.20px; top: 283.23px; position: absolute; background: white; border-radius: 15px; border: 1px #DFEAF2 solid"></div>
+                  <div style="width: 89.64px; height: 22.01px; left: 712.61px; top: 302.31px; position: absolute; color: #718EBF; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">*********</div>
+                  <div style="width: 118.02px; height: 23.48px; left: 268.91px; top: 362.47px; position: absolute; color: #232323; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Teléfono</div>
+                  <div style="width: 382.45px; height: 58.70px; left: 268.91px; top: 396.23px; position: absolute; background: white; border-radius: 15px; border: 1px #DFEAF2 solid"></div>
+                  <div style="width: 141.92px; height: 22.01px; left: 291.32px; top: 415.31px; position: absolute; color: #718EBF; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">+57 987654321</div>
+                  <div style="width: 195px; height: 64px; left: 878px; top: 718px; position: absolute; background: #1814F3; border-radius: 9px"></div>
+                  <div style="width: 62px; height: 26px; left: 945px; top: 743px; position: absolute; text-align: center; color: white; font-size: 15px; font-family: Inter; font-weight: 500; word-wrap: break-word">Guardar</div>
+                </div>
+              </div>
+        <!-- Barra lateral -->
+        <a href="principal.html" style="left: 106.68px; top: 184.54px;" class="sidebar-link">Inicio</a>
+        <a href="perfil.html" style="left: 106.85px; top: 351.78px;" class="sidebar-link">Mi perfil</a>
+        <a href="index.html" style="left: 108px; top: 440px;" class="sidebar-link">Cerrar sesión</a>
+        <a href="pedidos.html" style="left: 108px; top: 265px;" class="sidebar-link">Mis pedidos</a>
+
+        <!-- Encabezado -->
+        <div style="left: 290px; top: 34px; position: absolute; color: #343C6A; font-size: 28px; font-family: Inter; font-weight: 600;">Mi perfil</div>
+        <div id="nombre-usuario" style="left: 1000px; top: 34px; position: absolute; color: #343C6A; font-size: 28px; font-family: Inter; font-weight: 600;"></div>
+
+        <!-- Contenedor principal -->
+        <div style="width: 1110px; height: 813px; left: 289px; top: 136px; position: absolute; background: white; border-radius: 20px; padding: 20px;">
+            <img id="foto-perfil" 
+            src="" 
+            alt="Avatar" 
+            style="width: 169px; height: 160px; position: absolute; top: 50px; left: 50px; border-radius: 9999px;">
+
+            <!-- Nombre -->
+            <div class="label" style="left: 268px; top: 136px; position: absolute;">Nombre</div>
+            <div class="campo-container" style="width: 382px; height: 58px; left: 268px; top: 170px; position: absolute;">
+                <input id="input-nombre" type="text">
+            </div>
+
+            <!-- Contraseña -->
+            <div class="label" style="left: 268px; top: 260px; position: absolute;">Contraseña</div>
+            <div class="campo-container" style="width: 382px; height: 58px; left: 268px; top: 283px; position: absolute;">
+                <input id="input-password" type="password" placeholder="●●●●●●">
+            </div>
+
+            <!-- Teléfono -->
+            <div class="label" style="left: 268px; top: 370px; position: absolute;">Teléfono</div>
+            <div class="campo-container" style="width: 382px; height: 58px; left: 268px; top: 396px; position: absolute;">
+                <input id="input-telefono" type="text">
+            </div>
+
+            <!-- Dirección -->
+            <div class="label" style="left: 268px; top: 485px; position: absolute;">Dirección</div>
+            <div class="campo-container" style="width: 382px; height: 58px; left: 268px; top: 510px; position: absolute;">
+                <input id="input-direccion" type="text">
+            </div>
+
+            <!-- Botón Guardar -->
+            <button onclick="guardarCambios()" style="left: 878px; top: 718px; position: absolute;">Guardar</button>
+        </div>
+    </div>
+
+    <script>
+        const cliente = JSON.parse(localStorage.getItem('cliente'));
+        if (cliente) {
+            document.getElementById('nombre-usuario').textContent = cliente.cli_nombre_comercial;
+            // Ruta dinámica de la imagen según el cli_id
+            const rutaFoto = `img/perfil_cliente${cliente.cli_id}.png`;
+            // Asignar la foto al avatar grande y pequeño
+            document.getElementById('foto-perfil').src = rutaFoto;
+            document.getElementById('avatar-mini').src = rutaFoto;
+            document.getElementById('input-nombre').value = cliente.cli_nombre_comercial;
+            document.getElementById('input-telefono').value = cliente.cli_telefono;
+            document.getElementById('input-direccion').value = cliente.cli_direccion;
+        } else {
+            alert("Debes iniciar sesión primero");
+            window.location.href = "index.html";
+        }
+
+        function guardarCambios() {
+            const nombre = document.getElementById('input-nombre').value;
+            const telefono = document.getElementById('input-telefono').value;
+            const direccion = document.getElementById('input-direccion').value;
+            const password = document.getElementById('input-password').value;
+            const cli_id = cliente.cli_id;
+
+            fetch('api_update_profile.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `cli_id=${encodeURIComponent(cli_id)}&nombre=${encodeURIComponent(nombre)}&telefono=${encodeURIComponent(telefono)}&direccion=${encodeURIComponent(direccion)}&password=${encodeURIComponent(password)}`
+            })
+            .then(res => res.text()) 
+            .then(text => {
+                console.log('RESPUESTA CRUDA:', text); 
+                let data;
+                try {
+                    data = JSON.parse(text); 
+                } catch (e) {
+                    console.error('JSON inválido:', text);
+                    alert('El servidor no devolvió JSON válido');
+                    return;
+                }
+                if (data.success) {
+                    alert('Datos actualizados correctamente');
+                    cliente.cli_nombre_comercial = nombre;
+                    cliente.cli_telefono = telefono;
+                    cliente.cli_direccion = direccion;
+                    localStorage.setItem('cliente', JSON.stringify(cliente));
+                } else {
+                    alert('Error al actualizar: ' + data.error);
+                }
+            })
+            .catch(error => {
+                console.error('ERROR FETCH:', error);
+                alert('Error de conexión con el servidor');
+            });
+        }
+    </script>
+</body>
+</html>

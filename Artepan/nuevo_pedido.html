@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuevo Pedido</title>
+    <style>
+        body {
+            margin: 0;
+            background: #fff;
+            font-family: Inter, sans-serif;
+        }
+    </style>
+</head>
+<style>
+  body {
+      margin: 0;
+      background: #fff;
+      font-family: Inter, sans-serif;
+  }
+  input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      font-family: Inter, sans-serif;
+      background: transparent;
+      color: #343C6A;
+  }
+  button {
+      width: 195px;
+      height: 64px;
+      background: #1814F3;
+      border-radius: 9px;
+      color: white;
+      font-size: 15px;
+      font-family: Inter, sans-serif;
+      border: none;
+      cursor: pointer;
+  }
+  button:hover {
+      background: #0f0ecb;
+  }
+  .campo-container {
+      background: white;
+      border-radius: 15px;
+      border: 1px #DFEAF2 solid;
+      padding: 10px;
+  }
+  .label {
+      color: #232323;
+      font-size: 13px;
+      font-family: Inter, sans-serif;
+  }
+  .sidebar-link {
+      position: absolute;
+      color: #B1B1B1;
+      font-size: 20px;
+      font-family: Inter, sans-serif;
+      font-weight: 500;
+      word-wrap: break-word;
+      text-decoration: none;
+  }
+  .sidebar-link:hover {
+      color: #1814F3;
+  }
+</style>
+<body>
+    <div style="width: 1440px; height: 1024px; position: relative; background: white; overflow: hidden">
+        <div style="width: 33.65px; height: 31.73px; left: 34px; top: 831.83px; position: absolute"></div>
+        <div style="width: 34.99px; height: 33px; left: 36.69px; top: 506.92px; position: absolute"></div>
+        <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 263.23px; position: absolute; overflow: hidden">
+          <div style="width: 19.63px; height: 3.80px; left: 7.01px; top: 27.93px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 19.63px; height: 3.97px; left: 7.01px; top: 0px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 7.01px; height: 9.80px; left: 26.64px; top: 4.37px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 19.63px; height: 21.15px; left: 7.01px; top: 5.29px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 7.01px; height: 9.80px; left: 0px; top: 17.55px; position: absolute; background: #B1B1B1"></div>
+        </div>
+        <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 345.73px; position: absolute; overflow: hidden">
+            <img style="width: 28.07px; height: 30.40px; left: 2.76px; top: 0; position: absolute; border-radius: 20px" src="img/mi-perfil.png" />
+        </div>
+        <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 182px; position: absolute; overflow: hidden">
+        </div>
+        <div style="width: 1190px; height: 1px; left: 250px; top: 100px; position: absolute; background: #E6EFF5"></div>
+        <div style="width: 1190px; height: 923px; left: 250px; top: 101px; position: absolute; background: #F5F7FA"></div>
+        <div style="width: 25px; height: 25px; left: 1062px; top: 38px; position: absolute; overflow: hidden">
+        </div>
+        <div style="width: 25px; height: 25px; left: 1133px; top: 38px; position: absolute; overflow: hidden">
+        </div>
+        <div style="left: 290px; top: 34px; position: absolute; color: #343C6A; font-size: 28px; font-family: Inter; font-weight: 600; word-wrap: break-word">Nuevo pedido</div>
+          </div>
+        <div style="width: 1px; height: 850px; left: 249px; top: 0px; position: absolute; background: #E6EFF5"></div>
+        <div style="width: 33.65px; height: 31.73px; left: 34px; top: 831.83px; position: absolute"></div>
+        <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 263.23px; position: absolute; overflow: hidden">
+          <div style="width: 19.63px; height: 3.80px; left: 7.01px; top: 27.93px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 19.63px; height: 3.97px; left: 7.01px; top: 0px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 7.01px; height: 9.80px; left: 26.64px; top: 4.37px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 19.63px; height: 21.15px; left: 7.01px; top: 5.29px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 7.01px; height: 9.80px; left: 0px; top: 17.55px; position: absolute; background: #B1B1B1"></div>
+        </div>
+        <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 345.73px; position: absolute; overflow: hidden">
+            <img style="width: 28.07px; height: 30.40px; left: 2.76px; top: 0; position: absolute; border-radius: 20px" src="img/mi-perfil.png" />
+        </div>
+        <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 182px; position: absolute; overflow: hidden">
+            <img style="width: 33.64px; height: 31.73px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="img/inicio.png" />
+        </div>
+        
+        <div style="width: 37px; height: 34px; left: 38px; top: 436px; position: absolute; overflow: hidden">
+            <img style="width: 37px; height: 34px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="img/cerrar-sesion.png" />
+        </div>
+        <div style="width: 1190px; height: 1px; left: 250px; top: 100px; position: absolute; background: #E6EFF5"></div>
+        <img id="avatar-mini" 
+          src="" 
+          alt="Avatar" 
+          style="width: 60px; height: 60px; 
+                  left: 1340px; 
+                  top: 21px; 
+                  position: absolute; 
+                  border-radius: 50%; 
+                  object-fit: cover;">
+        <div style="width: 25px; height: 25px; left: 1062px; top: 38px; position: absolute; overflow: hidden">
+        </div>
+        
+        <a href="principal.html" style="left: 106.68px; top: 184.54px;" class="sidebar-link">Inicio</a>
+        <a href="perfil.html" style="left: 106.85px; top: 351.78px;" class="sidebar-link">Mi perfil</a>
+        <a href="index.html" style="left: 108px; top: 440px;" class="sidebar-link">Cerrar sesión</a>
+        <a href="pedidos.html" style="left: 108px; top: 265px;" class="sidebar-link">Mis pedidos</a>
+        <!-- Nombre del usuario en la esquina superior -->
+        <div id="nombre-usuario" style="left: 1000px; top: 34px; position: absolute; color: #343C6A; font-size: 28px; font-family: Inter; font-weight: 600; word-wrap: break-word">
+            <!-- Aquí aparecerá el nombre del usuario -->
+            Usuario1
+          </div>
+        <div style="width: 1px; height: 850px; left: 249px; top: 0px; position: absolute; background: #E6EFF5"></div>
+        <div style="width: 873px; height: 270px; left: 285px; top: 110px; position: absolute">
+            
+          <div style="width: 899px; height: 214px; left: -1px; top: 30px; position: absolute">
+            
+            <div data-property-1="Default" style="width: 203px; height: 214px; left: 0px; top: 0px; position: absolute">
+                <!-- Producto 1 -->
+                <img onclick="aumentarContador(9, 119000)" 
+                style="width: 202.68px; height: 182px; left: 231px; top: 150px; position: absolute; cursor: pointer;" 
+                src="img/frisano.png" />
+                
+
+                <!-- Producto 2 -->
+                <img onclick="aumentarContador(10, 130000)" 
+                style="width: 192px; height: 184.96px; left: 1.85px; top: 150px; position: absolute; cursor: pointer;" 
+                src="img/aliñado.png" />
+
+                <!-- Producto 3 -->
+                <img onclick="aumentarContador(11, 187000)" 
+                style="width: 203.63px; height: 182px; left: 464px; top: 150px; position: absolute; cursor: pointer;" 
+                src="img/helado.png" />
+                
+                    
+                <div style="width: 178px; height: 53px; left: 11px; top: 8px; position: absolute">
+                </div>
+              </div>
+              <div style="width: 94px; height: 47px; left: 55px; top: 87px; position: absolute; opacity: 0; background: #D89F65; overflow: hidden; border-radius: 7px">
+                <div style="left: 23px; top: 9px; position: absolute; color: #0F2125; font-size: 23px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">add</div>
+              </div>
+            </div>
+            <div data-property-1="Default" style="width: 203px; height: 214px; left: 0px; top: 0px; position: absolute">
+              <div style="width: 203px; height: 71px; left: 0px; top: 143px; position: absolute">
+                <div style="width: 178px; height: 53px; left: 11px; top: 8px; position: absolute">
+                  <div style="width: 178px; height: 23px; left: 0px; top: 30px; position: absolute"></div>
+                </div>
+              </div>
+              <div style="width: 94px; height: 47px; left: 55px; top: 87px; position: absolute; opacity: 0; background: #D89F65; overflow: hidden; border-radius: 7px">
+                <div style="left: 23px; top: 9px; position: absolute; color: #0F2125; font-size: 23px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">add</div>
+              </div>
+            </div>
+            <div data-property-1="Default" style="width: 203px; height: 214px; left: 0px; top: 0px; position: absolute">
+              <div style="width: 203px; height: 71px; left: 0px; top: 143px; position: absolute">
+                <div style="width: 193px; height: 71px; left: 0px; top: 0px; position: absolute; background: #D8E6E9; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; outline: 1px #ECEDED solid"></div>
+                <div style="width: 178px; height: 53px; left: 11px; top: 8px; position: absolute">
+                  <div style="left: 17px; top: 0px; position: absolute; text-align: center; color: black; font-size: 16px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">ArtePan Aliñado <br/>Graso (15 Kg)</div>
+                </div>
+              </div>
+              <div style="width: 94px; height: 47px; left: 55px; top: 87px; position: absolute; opacity: 0; background: #D89F65; overflow: hidden; border-radius: 7px">
+                <div style="left: 23px; top: 9px; position: absolute; color: #0F2125; font-size: 23px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">add</div>
+              </div>
+            </div>
+            <div data-property-1="Default" style="width: 203px; height: 214px; left: 232px; top: 0px; position: absolute">
+              <div style="width: 203px; height: 71px; left: 0px; top: 143px; position: absolute">
+                <div style="width: 203px; height: 71px; left: 0px; top: 0px; position: absolute; background: #D8E6E9; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; outline: 1px #ECEDED solid"></div>
+                <div style="width: 178px; height: 53px; left: 11px; top: 8px; position: absolute">
+                  <div style="left: 26px; top: 0px; position: absolute; text-align: center; color: black; font-size: 16px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">Aceite Sólido <br/>Fri’sano (20 lb)</div>
+                </div>
+              </div>
+              <div style="width: 94px; height: 47px; left: 55px; top: 87px; position: absolute; opacity: 0; background: #D89F65; overflow: hidden; border-radius: 7px">
+                <div style="left: 23px; top: 9px; position: absolute; color: #0F2125; font-size: 23px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">add</div>
+              </div>
+            </div>
+            <div data-property-1="Default" style="width: 203px; height: 214px; left: 464px; top: 0px; position: absolute">
+              <div style="width: 203px; height: 71px; left: 0px; top: 143px; position: absolute">
+                <div style="width: 203px; height: 71px; left: 0px; top: 0px; position: absolute; background: #D8E6E9; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; outline: 1px #ECEDED solid"></div>
+                <div style="width: 178px; height: 53px; left: 11px; top: 8px; position: absolute">
+                  <div style="left: 9px; top: 0px; position: absolute; text-align: center; color: black; font-size: 16px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">Arte Helado (15 Kg)</div>
+                </div>
+              </div>
+              <div style="width: 94px; height: 47px; left: 55px; top: 87px; position: absolute; opacity: 0; background: #D89F65; overflow: hidden; border-radius: 7px">
+                <div style="left: 23px; top: 9px; position: absolute; color: #0F2125; font-size: 23px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">add</div>
+              </div>
+            </div>
+            <div style="width: 81px; height: 23px; left: 61px; top: 192px; position: absolute; color: black; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">$ 130,000</div>
+            <div style="width: 81px; height: 23px; left: 294px; top: 192px; position: absolute; color: black; font-size: 15px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">$ 119,000</div>
+            <div style="width: 81px; height: 23px; left: 532px; top: 192px; position: absolute; color: black; font-size: 15px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">$ 187,000</div>
+          </div>
+          </div>
+        </div>
+              </div>
+            </div>
+            <div style="width: 94px; height: 47px; left: 55px; top: 87px; position: absolute; opacity: 0; background: #D89F65; overflow: hidden; border-radius: 7px">
+              <div style="left: 23px; top: 9px; position: absolute; color: #0F2125; font-size: 23px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">add</div>
+            </div>
+          </div>
+          <div data-property-1="Default" style="width: 203px; height: 214px; left: 232px; top: 0px; position: absolute">
+              <div style="width: 178px; height: 53px; left: 11px; top: 8px; position: absolute">
+              </div>
+            </div>
+            <div style="width: 94px; height: 47px; left: 55px; top: 87px; position: absolute; opacity: 0; background: #D89F65; overflow: hidden; border-radius: 7px">
+              <div style="left: 23px; top: 9px; position: absolute; color: #0F2125; font-size: 23px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">add</div>
+            </div>
+          </div>
+          <img style="width: 198px; height: 134px; left: 5px; top: 9px; position: absolute" src="img/artepan-principal.png" />
+              </div>
+            </div>
+            <div style="width: 94px; height: 47px; left: 55px; top: 87px; position: absolute; opacity: 0; background: #D89F65; overflow: hidden; border-radius: 7px">
+              <div style="left: 23px; top: 9px; position: absolute; color: #0F2125; font-size: 23px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">add</div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 419px; height: 885px; left: 975px; top: 120px; position: absolute">
+          <div style="width: 394px; height: 84px; left: 25px; top: 143px; position: absolute">
+            <div style="width: 394px; height: 84px; left: 0px; top: 0px; position: absolute; background: #EAF0F0; border-radius: 14px"></div>
+            <div id="cantidad-10" 
+                style="width: 12px; height: 36px; left: 323px; top: 24px; position: absolute; color: black; font-size: 35px; font-family: Quicksand; font-weight: 600; text-transform: uppercase">0</div>
+            <div style="left: 297px; top: 13px; position: absolute; color: black; font-size: 15px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">CANTIDAD</div>
+            <div style="width: 129px; left: 139px; top: 13px; position: absolute; color: black; font-size: 15px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">ArtePan Aliñado <br/> Graso </div>
+          </div>
+          <div style="width: 394px; height: 84px; left: 25px; top: 249px; position: absolute">
+            <div style="width: 394px; height: 84px; left: 0px; top: 0px; position: absolute; background: #EAF0F0; overflow: hidden; border-radius: 14px">
+              <img style="width: 81px; height: 58px; left: 17px; top: 13px; position: absolute" src="img/frisano.png" />
+            </div>
+            <div id="cantidad-9" 
+            style="width: 12px; height: 36px; left: 323px; top: 24px; position: absolute; color: black; font-size: 35px; font-family: Quicksand; font-weight: 600; text-transform: uppercase">0</div>
+            <div style="left: 297px; top: 13px; position: absolute; color: black; font-size: 15px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">CANTIDAD</div>
+            <div style="width: 129px; left: 139px; top: 13px; position: absolute; color: black; font-size: 15px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">Aceite Sólido <br/>Fri’sano</div>
+          </div>
+          <div style="width: 394px; height: 84px; left: 21px; top: 355px; position: absolute">
+            <div style="width: 394px; height: 84px; left: 0px; top: 0px; position: absolute; background: #EAF0F0; border-radius: 14px"></div>
+            <div id="cantidad-11" 
+            style="width: 12px; height: 36px; left: 323px; top: 24px; position: absolute; color: black; font-size: 35px; font-family: Quicksand; font-weight: 600; text-transform: uppercase">0</div>
+            <div style="left: 297px; top: 13px; position: absolute; color: black; font-size: 15px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">CANTIDAD</div>
+            <div style="width: 148px; left: 139px; top: 13px; position: absolute; color: black; font-size: 15px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">Arte Helado</div>
+          </div>
+          <div style="width: 397px; height: 231px; left: 21px; top: 549px; position: absolute; background: #FAFAFA; overflow: hidden; border-top-left-radius: 14px; border-top-right-radius: 14px; outline: 1px #A9A9A9 solid; outline-offset: -1px">
+            <!-- Total general -->
+            <div style="left: 66px; top: 42px; position: absolute; color: black; font-size: 30px; font-family: Quicksand; font-weight: 600; text-transform: uppercase; word-wrap: break-word">total</div>
+            <div id="total"
+            <div style="left: 230px; top: 42px; position: absolute; text-align: right; color: black; font-size: 30px; font-family: Quicksand; font-weight: 600; text-transform: uppercase; word-wrap: break-word">$0</div>
+            <div style="padding-left: 20px; padding-right: 20px; padding-top: 19px; padding-bottom: 19px; left: 21px; top: 131px; position: absolute; background: #EC5A5A; border-radius: 10px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+              <div style="color: #060D0F; font-size: 16px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">Cancelar pedido</div>
+            </div>
+            <div onclick="window.location.href='nuevo_pedido.html'"
+                    style="padding-left: 20px; padding-right: 20px; padding-top: 19px; padding-bottom: 19px; left: 21px; top: 131px; position: absolute; background: #EC5A5A; border-radius: 10px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex; cursor: pointer;">
+            <div style="color: #060D0F; font-size: 16px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">
+                Cancelar pedido
+            </div>
+            </div>
+
+            <div onclick="enviarPedido()"
+                style="padding-left: 20px; padding-right: 20px; padding-top: 19px; padding-bottom: 19px; left: 224px; top: 131px; position: absolute; background: #B1CED4; border-radius: 10px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex; cursor: pointer;">
+                <div style="color: #060D0F; font-size: 16px; font-family: Quicksand; font-weight: 500; text-transform: uppercase; word-wrap: break-word">
+                    Enviar pedido
+                </div>
+            </div>
+
+
+
+          </div>
+          <img style="width: 79px; height: 54px; left: 43px; top: 158px; position: absolute" src="img/aliñado.png" />
+          <div style="width: 395px; height: 96px; left: 24px; top: 25px; position: absolute">
+            <div style="left: -3px; top: 0px; position: absolute; text-align: center; color: #2C3832; font-size: 30px; font-family: Quicksand; font-weight: 600; text-transform: uppercase; word-wrap: break-word">Pedido #</div>
+            <div id="numero-pedido" 
+                style="left: 353px; top: 0px; position: absolute; text-align: right; color: #2C3832; font-size: 30px; font-family: Quicksand; font-weight: 600; text-transform: uppercase; word-wrap: break-word">
+            101
+            </div>
+            <div style="width: 394px; height: 0px; left: 1px; top: 96px; position: absolute; outline: 1px #A9A9A9 solid; outline-offset: -0.50px"></div>
+          </div>
+          <img style="width: 76px; height: 66px; left: 42px; top: 364px; position: absolute" src="img/helado.png" />
+        </div>
+        
+      </div>
+        
+        <script>
+        // Cargar datos del usuario desde localStorage
+        const cliente = JSON.parse(localStorage.getItem('cliente'));
+      
+        if (cliente) {
+            // Mostrar el nombre de usuario real
+            document.getElementById('nombre-usuario').textContent = cliente.cli_nombre_comercial;
+            const rutaFoto = `img/perfil_cliente${cliente.cli_id}.png`;
+            document.getElementById('avatar-mini').src = rutaFoto;
+        } else {
+            // Si no hay datos, redirigir al login
+            alert("Debes iniciar sesión primero");
+            window.location.href = "index.html";
+        }
+      </script>
+      <script>
+        // Variables para cantidad y total (inician en 0)
+        let cantidades = {9: 0, 10: 0, 11: 0};
+        let total = 0;
+        let precios = {
+            9: 119000, // ID del producto 1
+            10: 130000, // ID del producto 2
+            11: 187000  // ID del producto 3
+        };
+        
+
+    
+        function aumentarContador(productoId, precio) {
+            // Aumentar la cantidad del producto seleccionado
+            cantidades[productoId]++;
+            document.getElementById(`cantidad-${productoId}`).textContent = cantidades[productoId];
+    
+            // Aumentar el total
+            total += precio;
+            document.getElementById("total").textContent = `$${total.toLocaleString()}`;
+        }
+    </script>
+    <div id="numero-pedido"
+    style="left: 353px; top: 0px; position: absolute; text-align: right; color: #2C3832; font-size: 30px; font-family: Quicksand; font-weight: 600; text-transform: uppercase; word-wrap: break-word">
+ 
+</div>
+
+    <script>
+if (cliente) {
+    const formData = new FormData();
+    formData.append('cli_id', cliente.cli_id);
+
+    fetch('api_ultimo_pedido_cliente.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            document.getElementById("numero-pedido").textContent = data.siguiente_pedido;
+        } else {
+            console.error("Error:", data.error);
+            document.getElementById("numero-pedido").textContent = "1"; // Valor por defecto
+        }
+    })
+    .catch(err => {
+        console.error("Error al obtener número de pedido:", err);
+        document.getElementById("numero-pedido").textContent = "1";
+    });
+}
+
+    </script>
+    <script>
+            function enviarPedido() {
+    if (total > 0) {
+        const cliente = JSON.parse(localStorage.getItem('cliente'));
+
+        const productos = [];
+
+        // Usar los IDs de productos directamente desde las cantidades
+        for (const id in cantidades) {
+            const cantidad = cantidades[id];
+            if (cantidad > 0) {
+                productos.push({
+                    id: parseInt(id),             
+                    cantidad: cantidad,
+                    precio: precios[id]          
+                });
+            }
+        }
+
+        const formData = new FormData();
+        formData.append('cli_id', cliente.cli_id);
+        formData.append('productos', JSON.stringify(productos));
+        formData.append('total', total);
+
+        fetch('api_guardar_pedido.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Tu pedido ha sido enviado satisfactoriamente. Gracias por tu compra.');
+
+                // Actualizar número de pedido en pantalla
+                const numPedidoElement = document.getElementById("numero-pedido");
+                numPedidoElement.textContent = parseInt(numPedidoElement.textContent) + 1;
+
+                // Reiniciar cantidades y total
+                for (const id in cantidades) {
+                    cantidades[id] = 0;
+                    document.getElementById(`cantidad-${id}`).textContent = "0";
+                }
+                total = 0;
+                document.getElementById("total").textContent = "$0";
+            } else {
+                alert("Error al enviar pedido: " + data.error);
+            }
+        })
+        .catch(err => {
+            console.error("Error al enviar pedido:", err);
+            alert("Error inesperado al enviar el pedido.");
+        });
+
+    } else {
+        alert('Debes seleccionar al menos un producto.');
+    }
+    }
+
+    </script>
+
+</body>
+</html>

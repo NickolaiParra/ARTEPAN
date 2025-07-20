@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesión</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<script>
+    function login() {
+        const usuario = document.getElementById('usuario').value;
+        const password = document.getElementById('password').value;
+    
+        const formData = new FormData();
+        formData.append('usuario', usuario);
+        formData.append('password', password);
+    
+        fetch('api.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                // Guardar datos en localStorage para usarlos en principal.html
+                localStorage.setItem('cliente', JSON.stringify(data.cliente));
+                // Redirigir a principal.html
+                window.location.href = 'principal.html';
+            } else {
+                alert(data.error); // Mostrar error
+            }
+        })
+        .catch(err => {
+            console.error('Error al conectar con la API:', err);
+        });
+    }
+    </script>
+    
+<body>
+    <div style="height: 100vh; width: 50vw; overflow: hidden;">
+  <video style="height: 100vh; width: auto;" autoplay loop muted playsinline>
+    <source src="img/artepansa.mp4" type="video/mp4">
+    Tu navegador no soporta el video.
+  </video>
+</div>
+    <div style="width: 720px; height: 1024px; padding-left: 80px; padding-right: 80px; padding-top: 24px; padding-bottom: 24px; background: white; border-radius: 16px; flex-direction: column; justify-content: center; align-items: center; gap: 24px; display: inline-flex">
+        <img style="width: 346px; height: 154px" src="img/logo.png" />
+        <div style="width: 532px; height: 80px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: flex">
+            <div style="align-self: stretch; height: 106px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                <div style="color: #344054; font-size: 36px; font-family: Roboto, sans-serif; font-weight: 500; line-height: 44px; word-wrap: break-word">Inicio de sesión</div>
+                <div style="align-self: stretch; text-align: center; color: #475467; font-size: 16px; font-family: Inter, sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Ingresa tus datos para iniciar sesión</div>
+            </div>
+        </div>
+        <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: center; gap: 16px; display: flex">
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: flex">
+                <!-- Aquí van los campos de formulario -->
+                <!-- Usuario -->
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: flex">
+                    <div style="color: #344054; font-size: 14px; font-family: Inter, sans-serif; font-weight: 500; line-height: 20px;">Usuario</div>
+                    <input type="text" id="usuario" placeholder="cliente1" required style="width: 100%; padding: 10px; border: 1px solid #D0D5DD; border-radius: 8px;">
+                </div>
+                <!-- Contraseña -->
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: flex">
+                    <div style="color: #344054; font-size: 14px; font-family: Inter, sans-serif; font-weight: 500; line-height: 20px;">Contraseña</div>
+                    <input type="password" id="password" placeholder="●●●●●●" required style="width: 100%; padding: 10px; border: 1px solid #D0D5DD; border-radius: 8px;">
+                </div>
+                <!-- Recordarme y Olvidé contraseña -->
+                <div style="align-self: stretch; justify-content: space-between; display: flex; margin-top: 8px;">
+                    <label style="display: flex; align-items: center;">
+                        <input type="checkbox" style="margin-right: 8px;">Recuérdame
+                    </label>
+                    <a href="#" style="color: #6941C6; font-size: 14px; text-decoration: none;">¿Olvidaste tu contraseña?</a>
+                </div>
+                <!-- Botón de inicio de sesión -->
+                <button type="button" onclick="login()" style="width: 100%; padding: 10px; background-color: #7F56D9; color: white; border: none; border-radius: 8px; font-size: 16px;">Iniciar sesión</button>
+                <!-- Registrarse -->
+                <p style="text-align: center; font-size: 16px;">¿No tienes una cuenta? <a href="#" style="color: #6941C6;">Registrarse</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para manejar el login -->
+    <script>
+        function login() {
+            const usuario = document.getElementById('usuario').value;
+            const password = document.getElementById('password').value;
+
+            const formData = new FormData();
+            formData.append('usuario', usuario);
+            formData.append('password', password);
+
+            fetch('api.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    // Guarda los datos del cliente en localStorage
+                    localStorage.setItem('cliente', JSON.stringify(data.cliente));
+                    // Redirige a principal.html
+                    window.location.href = 'principal.html';
+                } else {
+                    alert(data.error); // Muestra el mensaje de error
+                }
+            })
+            .catch(err => {
+                console.error('Error al conectar con la API:', err);
+                alert('Ocurrió un error al intentar iniciar sesión.');
+            });
+        }
+    </script>
+</body>    
+</html>

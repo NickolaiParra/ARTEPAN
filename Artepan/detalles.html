@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Pedidos</title>
+    <style>
+        body {
+            margin: 0;
+            background: #fff;
+            font-family: Inter, sans-serif;
+        }
+    </style>
+</head>
+<style>
+  body {
+      margin: 0;
+      background: #fff;
+      font-family: Inter, sans-serif;
+  }
+  input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      font-family: Inter, sans-serif;
+      background: transparent;
+      color: #343C6A;
+  }
+  button {
+      width: 195px;
+      height: 64px;
+      background: #1814F3;
+      border-radius: 9px;
+      color: white;
+      font-size: 15px;
+      font-family: Inter, sans-serif;
+      border: none;
+      cursor: pointer;
+  }
+  button:hover {
+      background: #0f0ecb;
+  }
+  .campo-container {
+      background: white;
+      border-radius: 15px;
+      border: 1px #DFEAF2 solid;
+      padding: 10px;
+  }
+  .label {
+      color: #232323;
+      font-size: 13px;
+      font-family: Inter, sans-serif;
+  }
+  .sidebar-link {
+      position: absolute;
+      color: #B1B1B1;
+      font-size: 20px;
+      font-family: Inter, sans-serif;
+      font-weight: 500;
+      word-wrap: break-word;
+      text-decoration: none;
+  }
+  .sidebar-link:hover {
+      color: #1814F3;
+  }
+</style>
+<body>
+    <div style="width: 1440px; height: 1024px; position: relative; background: white; overflow: hidden">
+        <div style="width: 33.65px; height: 31.73px; left: 34px; top: 831.83px; position: absolute"></div>
+        <div style="width: 34.99px; height: 33px; left: 36.69px; top: 506.92px; position: absolute"></div>
+        <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 263.23px; position: absolute; overflow: hidden">
+          <div style="width: 19.63px; height: 3.80px; left: 7.01px; top: 27.93px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 19.63px; height: 3.97px; left: 7.01px; top: 0px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 7.01px; height: 9.80px; left: 26.64px; top: 4.37px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 19.63px; height: 21.15px; left: 7.01px; top: 5.29px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 7.01px; height: 9.80px; left: 0px; top: 17.55px; position: absolute; background: #B1B1B1"></div>
+        </div>
+        <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 345.73px; position: absolute; overflow: hidden">
+            <img style="width: 28.07px; height: 30.40px; left: 2.76px; top: 0; position: absolute; border-radius: 20px" src="img/mi-perfil.png" />
+        </div>
+        <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 182px; position: absolute; overflow: hidden">
+            <img style="width: 33.64px; height: 31.73px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="img/inicio.png" />
+        </div>
+        <div style="width: 37px; height: 34px; left: 35px; top: 523px; position: absolute"></div>
+        <div style="width: 1190px; height: 1px; left: 250px; top: 100px; position: absolute; background: #E6EFF5"></div>
+        <div style="width: 1190px; height: 923px; left: 250px; top: 101px; position: absolute; background: #F5F7FA"></div>
+        <div style="width: 25px; height: 25px; left: 1062px; top: 38px; position: absolute; overflow: hidden">
+        </div>
+        <div style="left: 290px; top: 34px; position: absolute; color: #343C6A; font-size: 28px; font-family: Inter; font-weight: 600; word-wrap: break-word">Detalles del pedido</div>
+        <div style="width: 1px; height: 850px; left: 249px; top: 0px; position: absolute; background: #E6EFF5"></div>
+        <img style="width: 172px; height: 138px; left: 42px; top: 7px; position: absolute" src="img/artepan-principal.png" />
+        <div style="width: 33.65px; height: 31.73px; left: 34px; top: 831.83px; position: absolute"></div>
+        <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 263.23px; position: absolute; overflow: hidden">
+          <div style="width: 19.63px; height: 3.80px; left: 7.01px; top: 27.93px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 19.63px; height: 3.97px; left: 7.01px; top: 0px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 7.01px; height: 9.80px; left: 26.64px; top: 4.37px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 19.63px; height: 21.15px; left: 7.01px; top: 5.29px; position: absolute; background: #B1B1B1"></div>
+          <div style="width: 7.01px; height: 9.80px; left: 0px; top: 17.55px; position: absolute; background: #B1B1B1"></div>
+        </div>
+        <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 345.73px; position: absolute; overflow: hidden">
+            <img style="width: 28.07px; height: 30.40px; left: 2.76px; top: 0; position: absolute; border-radius: 20px" src="img/mi-perfil.png" />
+        </div>
+        <div style="width: 33.65px; height: 31.73px; left: 38.04px; top: 182px; position: absolute; overflow: hidden">
+            <img style="width: 33.64px; height: 31.73px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="img/inicio.png" />
+        </div>
+        <a href="principal.html" style="left: 106.68px; top: 184.54px;" class="sidebar-link">Inicio</a>
+        <a href="perfil.html" style="left: 106.85px; top: 351.78px;" class="sidebar-link">Mi perfil</a>
+        <a href="index.html" style="left: 108px; top: 440px;" class="sidebar-link">Cerrar sesión</a>
+        <a href="pedidos.html" style="left: 108px; top: 265px;" class="sidebar-link">Mis pedidos</a>
+        <div style="width: 37px; height: 34px; left: 35px; top: 436px; position: absolute; overflow: hidden">
+            <img style="width: 37px; height: 34px; left: 0px; top: 0px; position: absolute; border-radius: 20px" src="img/cerrar-sesion.png" />
+        </div>
+        <div style="width: 1190px; height: 1px; left: 250px; top: 100px; position: absolute; background: #E6EFF5"></div>
+        <img id="avatar-mini" 
+          src="" 
+          alt="Avatar" 
+          style="width: 60px; height: 60px; 
+                  left: 1340px; 
+                  top: 21px; 
+                  position: absolute; 
+                  border-radius: 50%; 
+                  object-fit: cover;">
+        <!-- Nombre del usuario en la esquina superior -->
+        <div id="nombre-usuario" style="left: 1000px; top: 34px; position: absolute; color: #343C6A; font-size: 28px; font-family: Inter; font-weight: 600; word-wrap: break-word">
+            <!-- Aquí aparecerá el nombre del usuario -->
+            Usuario1
+          </div>
+        <div style="width: 25px; height: 25px; left: 1062px; top: 38px; position: absolute; overflow: hidden">
+        </div>
+        <div style="width: 1px; height: 850px; left: 249px; top: 0px; position: absolute; background: #E6EFF5"></div>
+        <img style="width: 172px; height: 138px; left: 42px; top: 7px; position: absolute" src="img/artepan-principal.png" />
+        <div style="left: 290px; top: 145px; position: absolute; color: #343C6A; font-size: 22px; font-family: Inter; font-weight: 600; word-wrap: break-word">Resumen del pedido</div>
+        <div style="width: 1110px; height: 657px; left: 272px; top: 316px; position: absolute; background: white; border-radius: 25px"></div>
+        <div style="width: 208.47px; height: 27px; left: 616px; top: 326px; position: absolute; color: #718EBF; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Precio unitario</div>
+        <div style="width: 120.31px; height: 27px; left: 413px; top: 326px; position: absolute; color: #718EBF; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Producto</div>
+        <div style="width: 137.52px; height: 27px; left: 878px; top: 326px; position: absolute; color: #718EBF; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Cantidad</div>
+        <div style="width: 178.52px; height: 27px; left: 1107px; top: 323px; position: absolute; color: #718EBF; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Subtotal</div>
+        <div style="width: 1050px; height: 1.04px; left: 320px; top: 429.82px; position: absolute; background: #F2F4F7"></div>
+        <div style="width: 1050px; height: 1.04px; left: 320px; top: 497.50px; position: absolute; background: #F2F4F7"></div>
+        <div style="width: 1050px; height: 1.04px; left: 320px; top: 565.18px; position: absolute; background: #F2F4F7"></div>
+        <div style="width: 1050px; height: 1.04px; left: 320px; top: 647.69px; position: absolute; background: #F2F4F7"></div>
+        <div style="width: 1050px; height: 1.04px; left: 320px; top: 700.53px; position: absolute; background: #F2F4F7"></div>
+        <div style="width: 1050px; height: 1.04px; left: 320px; top: 768.21px; position: absolute; background: #F2F4F7"></div>
+        <div style="width: 1050px; height: 1.04px; left: 320px; top: 835.89px; position: absolute; background: #F2F4F7"></div>
+        <div style="width: 1050px; height: 1.04px; left: 320px; top: 362.14px; position: absolute; background: #E6EFF5"></div>
+        <div style="width: 1050px; height: 1.04px; left: 320px; top: 903.57px; position: absolute; background: #E6EFF5"></div>
+        <div style="width: 1110px; height: 100px; left: 279px; top: 198px; position: absolute; background: white; border-radius: 15px"></div>
+        <img style="width: 67.23px; height: 65.22px; left: 302.29px; top: 213px; position: absolute; border-radius: 15px" src="img/entrega-rapida.png" />
+        <div id="detalle-pedido-numero" style="width: 189.73px; height: 21.74px; left: 403.57px; top: 250.99px; position: absolute; color: #718EBF; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">01</div>
+        <div id="detalle-pedido-estado" style="width: 138.94px; height: 21.74px; left: 522.07px; top: 248.99px; position: absolute; color: #718EBF; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Entregado</div>
+        <div id="detalle-pedido-fecha" style="width: 138.94px; height: 21.74px; left: 660.82px; top: 250px; position: absolute; color: #718EBF; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">15/01/2020</div>
+        <div id="detalle-pedido-entrega" style="width: 216.73px; height: 21.74px; left: 826.91px; top: 249.99px; position: absolute; color: #718EBF; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">20/01/2020</div>
+        <div id="detalle-pedido-total" style="width: 216.73px; height: 21.74px; left: 1043.64px; top: 249.99px; position: absolute; color: #718EBF; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">$1,540,000</div>
+        <div id="detalle-pedido-metodo" style="width: 216.73px; height: 21.74px; left: 1196px; top: 248.99px; position: absolute; color: #718EBF; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Efectivo</div>
+        <div style="width: 188.77px; height: 23.19px; left: 826.91px; top: 221px; position: absolute; color: #232323; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Entrega Estimada</div>
+        <div style="width: 188.77px; height: 23.19px; left: 1196px; top: 220px; position: absolute; color: #232323; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Forma de pago</div>
+        <div style="width: 188.77px; height: 23.19px; left: 1043.64px; top: 221px; position: absolute; color: #232323; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Total</div>
+        <div style="width: 150.90px; height: 23px; left: 660.82px; top: 221px; position: absolute; color: #232323; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Fecha Pedido</div>
+        <div style="width: 121.01px; height: 23.19px; left: 522.07px; top: 220px; position: absolute; color: #232323; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Estado</div>
+        <div style="width: 138.94px; height: 23.19px; left: 403.57px; top: 222px; position: absolute; color: #232323; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Pedido</div>
+      <script>
+        // Cargar datos del usuario desde localStorage
+        const cliente = JSON.parse(localStorage.getItem('cliente'));
+      
+        if (cliente) {
+            // Mostrar el nombre de usuario real
+            document.getElementById('nombre-usuario').textContent = cliente.cli_nombre_comercial;
+            const rutaFoto = `img/perfil_cliente${cliente.cli_id}.png`;
+            document.getElementById('avatar-mini').src = rutaFoto;
+        } else {
+            // Si no hay datos, redirigir al login
+            alert("Debes iniciar sesión primero");
+            window.location.href = "index.html";
+        }
+      </script>
+      <script>
+        const params = new URLSearchParams(window.location.search);
+        const ped_id = params.get('ped_id'); // Obtenemos el ID de la URL
+    
+        if (!ped_id) {
+            alert("No se proporcionó un ID de pedido");
+            window.location.href = "pedidos.html"; // Redirige si no hay ID
+        } else {
+            const formData = new FormData();
+            const cliente = JSON.parse(localStorage.getItem('cliente'));
+            const params = new URLSearchParams(window.location.search);
+            const ped_id = params.get('ped_id');
+            formData.append('ped_id', ped_id);
+    
+            fetch('api_detalles_pedido.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const detalles = data.detalles;
+                    let topBase = 385; // posición inicial para los productos
+    
+                    detalles.forEach((item, index) => {
+                        const fila = `
+                            <div style="width: 102px; left: 656px; top: ${topBase + index * 64}px; position: absolute; color: #232323; font-size: 16px;">$${item.pro_precio_unitario.toLocaleString()}</div>
+                            <div style="width: 159px; left: 384px; top: ${topBase + index * 64}px; position: absolute; text-align: center; color: #232323; font-size: 16px;">
+                                ${item.pro_nombre}
+                            </div>
+                            <div style="width: 112px; left: 918px; top: ${topBase + index * 64}px; position: absolute; color: #232323; font-size: 16px;">${item.pde_cantidad}</div>
+                            <div style="width: 115px; left: 1120px; top: ${topBase + index * 64}px; position: absolute; color: #232323; font-size: 16px;">
+                                $${item.subtotal.toLocaleString()}
+                            </div>
+                            <div style="width: 1000px; height: 1px; left: 290px; top: ${topBase + 40 + index * 64}px; position: absolute; background: #F4F5F7"></div>
+                        `;
+                        document.body.insertAdjacentHTML('beforeend', fila);
+                    });
+                } else {
+                    alert("No se pudieron cargar los detalles: " + data.error);
+                }
+            })
+            .catch(error => {
+                console.error("Error al cargar detalles:", error);
+                alert("Error de conexión con el servidor");
+            });
+        }
+    </script>
+    <script>
+    
+        if (!cliente || !ped_id) {
+            alert("No se pudo cargar la información del pedido");
+            window.location.href = "pedidos.html";
+        } else {
+            // Cargar los pedidos del cliente
+            const formData = new FormData();
+            formData.append('cli_id', cliente.cli_id);
+    
+            fetch('api_pedidos.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Buscar el pedido por su ped_id
+                    const pedido = data.pedidos.find(p => p.ped_id == ped_id);
+    
+                    if (pedido) {
+                        document.getElementById('detalle-pedido-numero').textContent = pedido.numero_pedido.toString().padStart(2, '0');
+                        document.getElementById('detalle-pedido-estado').textContent = pedido.ped_estado;
+                        document.getElementById('detalle-pedido-fecha').textContent = new Date(pedido.ped_fecha_pedido).toLocaleDateString();
+                        document.getElementById('detalle-pedido-entrega').textContent = new Date(pedido.ped_fecha_entrega).toLocaleDateString();
+                        document.getElementById('detalle-pedido-total').textContent = `$${pedido.total.toLocaleString()}`;
+                        document.getElementById('detalle-pedido-metodo').textContent = pedido.ped_metodo_pago;
+                    } else {
+                        alert("No se encontró el pedido seleccionado.");
+                    }
+
+                } else {
+                    alert("Error al cargar pedidos: " + data.error);
+                }
+            })
+            .catch(error => {
+                console.error("Error al obtener pedidos:", error);
+                alert("Error de conexión con el servidor");
+            });
+        }
+    </script>
+    
+    
+</body>
+</html>
