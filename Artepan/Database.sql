@@ -425,7 +425,7 @@ begin
     declare total int;
     select count(*) into total
     from pedido
-    where cli_id = p_cli_id and ped_estado = 'en tránsito';
+    where cli_id = p_cli_id and ped_estado = 'en camino';
     return total;
 end;
 //
