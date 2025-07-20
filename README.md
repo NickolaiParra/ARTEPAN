@@ -97,10 +97,11 @@ Este proyecto es una aplicación web que permite a los clientes registrarse, ini
 
 ## ⚠️ Notas importantes
 
-1. **Apache y MySQL deben permanecer activos** mientras usas la plataforma.
-2. Si cambias la contraseña del usuario root en MySQL, recuerda actualizarla en todos los archivos PHP.
-3. La carpeta `img` debe permanecer en su ubicación original para que las imágenes se muestren correctamente en la web.
-4. Si surge un error `403 Forbidden`, revisa los permisos de la carpeta en `htdocs` y asegúrate de que no haya espacios en el nombre de la carpeta.
+1. **Apache y MySQL deben permanecer activos** mientras usas la plataforma.  
+2. Si cambias la contraseña del usuario root en MySQL, recuerda actualizarla en todos los archivos PHP.  
+3. La carpeta `img` debe permanecer en su ubicación original para que las imágenes se muestren correctamente en la web.  
+4. Si surge un error `403 Forbidden`, revisa los permisos de la carpeta en `htdocs` y asegúrate de que no haya espacios en el nombre de la carpeta.  
+5. Si al intentar iniciar MySQL con el botón *Start* en el panel de control **se detiene inmediatamente**, cambia el puerto de MySQL en la configuración, por ejemplo a `3307`.  
 
 ---
 
